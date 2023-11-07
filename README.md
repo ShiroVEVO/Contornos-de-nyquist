@@ -10,7 +10,7 @@ Ingeniería de Sistemas - Universidad Distrital Francisco José de Caldas
 **Introducción:**
 
 
-Un contorno de Nyquist es una representación gráfica utilizada en el análisis de sistemas de control y teoría de control. Este gráfico muestra cómo un sistema responde a diferentes frecuencias de entrada en un plano complejo, Una de sus aplicaciones mas importantes es determinar la estabilidad de un sistema de control pues basta con mirar el el contorno rodea o no el punto critico del plano complejo, Asi mismo el numero de vueltas alrededor de ese punto obedecerá a Z-P con Z el numero de ceros y P el numero de polos de la función de transferencia. 
+Un contorno de Nyquist es una representación gráfica utilizada en el análisis de sistemas de control y teoría de control. Este gráfico muestra cómo un sistema responde a diferentes frecuencias de entrada en un plano complejo, Una de sus aplicaciones mas importantes es determinar la estabilidad de un sistema de control pues basta con mirar si el contorno rodea o no el punto critico del plano complejo, Asi mismo el numero de vueltas alrededor de ese punto obedecerá a Z-P con Z el numero de ceros y P el numero de polos de la función de transferencia. 
 
 **Programa:**
 
