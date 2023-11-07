@@ -3,7 +3,7 @@ figure;
 
 %Cosas funcion de transferencia
 num = [4, 5, 6];
-den = [1, 0, 4];%den = [1, 2, 3];
+den = [1, 2, 3];% polos imaginarios: den = [1, 0, 4];
 G = tf(num, den);
 polos = pole(G);
 ceros = zero(G);
@@ -58,11 +58,9 @@ z = [z,Ztotal];
 if imaginarios
     %...
     y = polyval(num, z) ./ polyval(den, z);
-    znew = y;
     plot(real(y), imag(y), 'x');
     hold on;
     %...
-    disp("ey!");
 else
     for i = 1:length(polos_y_ceros)
         distancia = abs(polos_y_ceros(i));
@@ -73,6 +71,9 @@ else
     angulos = linspace(-pi/2, pi/2, 100);
     z = radio * exp(1i * angulos) + centro;
     z_eje_imaginario = 1i * linspace(-radio, radio, 100);
+    y = polyval(num, z) ./ polyval(den, z);
+    %plot(real(y), imag(y), 'x');
+    %hold on;
     nyquist(G);
     hold on;
 end
